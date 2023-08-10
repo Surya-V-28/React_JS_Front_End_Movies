@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCirclePlay } from '@fortawesome/free-solid-svg-icons';
 import {Link, useNavigate} from "react-router-dom";
 import Button from 'react-bootstrap/Button';
+import LoadingSpinner from '../spinner/Spinner';
 
 const Hero = ({ movies }) => {
     let imgs;
@@ -60,7 +61,7 @@ const Hero = ({ movies }) => {
                         })
                     }
                 </Caroursel>
-                    : <div>  Sura </div>
+                    : LoadingSpinner()
             }
         </div>
     )
